@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="LOCATION OF CSS FILE">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+
+
+
+
+
+    <style>
+
+    @media (max-width: 420px) {
+
+#menu li {
+float: none;
+height: 40px;
+background: gray;
+border: solid 1px #000;
+line-height: 40px;
+padding: 5px 12px;
+    }
+      header  span {
+    height: 5px;
+    width: 30px;
+    background: red;
+    display: block;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+.navicon.rotate span:first-child {
+    transform: rotate(45deg);
+}
+}
+
+
+
+span {
+    display: none;
+}
+
+.navicon {
+    background: green;
+    display: inline-block;
+    cursor: pointer;
+}
+}
+span {
+    display: none;
+}
+
+
+
+
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        #menu li{
+            float: left;
+            margin-right: 50px;
+            list-style-type: none;
+        }
+        .clear{
+            clear: both;
+        }
+        #menu{
+            float: left;
+            margin: 0;
+        }
+        #search{
+            float: right;
+        }
+        header{
+            max-width: 1000px;
+            margin: 15px auto 0 auto ;
+            background: white;
+        }
+        #header-bottom{
+            background: silver;
+            height: 250px;
+            margin-top: 25px;
+            padding: 25px 0 25px 0;
+        }
+        #header-bottom-inner{
+            background: blue;
+            height: 250px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        #logo{
+            background: black;
+            color: white;
+            font-size: 25px;
+            padding: 20px;
+            float: left;
+            margin: 20px 0 0 20px;
+        }
+        #menu a{
+            text-decoration: none;
+        }
+        #menu a:hover{
+            text-decoration: underline;
+        }
+        #content{
+            background: white;
+            margin-top: 35px;
+        }
+        .content-inner{
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .info{
+            width: 20%;
+            float: left;
+            margin-right: 6.5%;
+        }
+        .info:nth-of-type(4){
+            margin-right: 0%;
+        }
+        .info-header{
+            background: black;
+            text-align: center;
+            padding: 40px 0 40px 0;
+            color: white;
+        }
+        .info-bottom{
+            background: silver;
+            padding-left: 10px;
+        }
+        .clear {
+            clear: both;
+        }
+        #last-info{
+            margin-right: 0;
+        }
+
+    </style>
+
+    <script>
+$(document).ready(function() {
+
+
+
+
+
+
+$(".navicon").click(function() {
+  $(this).toggleClass("rotate");
+});
+
+
+
+
+
+});
+
+</script>
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div class="navicon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+      
+
+
+
+        <ul id="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Photos</a></li>
+            <li><a href="#">Video</a></li>
+            <li><a href="#">Featured</a></li>
+            <div class="clear"></div>
+        </ul>
+        
+
+
+
+
+        <form action="#" id="search">
+            <input type="text" placeholder="search"/>
+            <input type="submit" value="GO"/>
+        </form>
+        <div class="clear"></div>
+    </header>
+
+    <div id="header-bottom">
+        <div id="header-bottom-inner">
+            <div id="logo">LOGO</div>
+        </div>
+    </div>
+
+    <main id="content">
+        <section class="content-inner">
+            <div class="info">
+                <div class="info-header">IMAGE</div>
+                <div class="info-bottom">Analytics infromation</div>
+            </div>
+
+
+            <div class="info">
+                <div class="info-header">IMAGE</div>
+                <div class="info-bottom">Analytics infromation</div>
+            </div>
+
+
+            <div class="info">
+                <div class="info-header">IMAGE</div>
+                <div class="info-bottom">Analytics infromation</div>
+            </div>
+
+            <div class="info" id="last-info">
+                <div class="info-header">IMAGE</div>
+                <div class="info-bottom">Analytics infromation</div>
+            </div>
+            <div class="clear"></div>
+        </section>
+    </main>
+
+</div>
+
+</body>
+</html>
